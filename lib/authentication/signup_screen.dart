@@ -12,6 +12,21 @@ class _SignUpScreenState extends State<SignUpScreen>
   @override
   Widget build(BuildContext context) 
   {
-    return const Placeholder();
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(10),
+          child: Column(
+            children: [
+              Image.asset(
+                "assets/images/logo.png"
+                ),
+            ],
+
+          ),
+        ),
+      ),
+
+    );
   }
 }
