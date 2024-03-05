@@ -12,6 +12,7 @@ class _SignUpScreenState extends State<SignUpScreen>
 {
   TextEditingController userNameTextEditingController = TextEditingController();
   TextEditingController emailTextEditingController = TextEditingController();
+  TextEditingController phoneNumberTextEditingController = TextEditingController();
   TextEditingController passwordTextEditingController = TextEditingController();
   @override
   Widget build(BuildContext context) 
@@ -57,6 +58,21 @@ class _SignUpScreenState extends State<SignUpScreen>
                         keyboardType: TextInputType.emailAddress,
                         decoration: const InputDecoration(
                           labelText: "User E-mail",
+                          labelStyle: TextStyle(
+                            fontSize: 14,
+                          ),
+                        ),
+                        style: const TextStyle(
+                          color: Colors.grey,
+                          fontSize: 15,
+                        ),
+                      ),const SizedBox(height: 22,),
+
+                      TextField(
+                        controller: phoneNumberTextEditingController,
+                        keyboardType: TextInputType.phone,
+                        decoration: const InputDecoration(
+                          labelText: "User Phone Number",
                           labelStyle: TextStyle(
                             fontSize: 14,
                           ),

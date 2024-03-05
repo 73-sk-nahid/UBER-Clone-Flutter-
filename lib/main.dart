@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uber_clone_user_app/authentication/signup_screen.dart';
+import 'package:uber_clone_user_app/authentication/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: Colors.black,
       ),
-      home:const SignUpScreen(),
+      home:const LogInScreen(),
     );
   }
 }
