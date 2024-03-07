@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uber_clone_user_app/authentication/login_screen.dart';
+import 'package:uber_clone_user_app/methods/common_methods.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -14,6 +15,13 @@ class _SignUpScreenState extends State<SignUpScreen>
   TextEditingController emailTextEditingController = TextEditingController();
   TextEditingController phoneNumberTextEditingController = TextEditingController();
   TextEditingController passwordTextEditingController = TextEditingController();
+  CommonMethods cMethods = CommonMethods();
+
+  checkIsInternetAvailable()
+  {
+    cMethods.checkConnectivity(context);
+  }
+
   @override
   Widget build(BuildContext context) 
   {
@@ -102,7 +110,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                       ElevatedButton(
                         onPressed: () 
                         {
-
+                          checkIsInternetAvailable();
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.purple,
