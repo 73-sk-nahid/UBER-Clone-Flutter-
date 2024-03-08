@@ -16,7 +16,9 @@ class CommonMethods
 
   displaySnackBar(String messageText, BuildContext context)
   {
-    var snackBar = SnackBar(content: Text(messageText));
+    var snackBar = SnackBar(
+      content: Text(messageText),
+      duration: const Duration(seconds: 1));
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 }
