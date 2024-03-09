@@ -9,12 +9,14 @@ import 'package:uber_clone_user_app/authentication/login_screen.dart';
 
   runApp(const MyApp());
 } */
-void main() async {
+
+Future main() async 
+{
   WidgetsFlutterBinding.ensureInitialized();
   Firebase.initializeApp();
+
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   
