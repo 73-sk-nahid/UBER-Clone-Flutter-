@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "774900522703",
+    "project_id": "uber-demo-app-cd270",
+    "storage_bucket": "uber-demo-app-cd270.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774900522703:android:772195555bba856d3a21ba",
+        "android_client_info": {
+          "package_name": "com.sknahid.uber_clone_user_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZDqr8Va2drRaWXkCJyddm6BwfmEXJyRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
