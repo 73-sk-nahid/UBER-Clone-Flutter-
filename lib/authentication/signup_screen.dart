@@ -1,6 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:uber_clone_user_app/authentication/login_screen.dart';
 import 'package:uber_clone_user_app/methods/common_methods.dart';
+import 'package:uber_clone_user_app/widgets/loading_dialog.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -188,5 +191,27 @@ class _SignUpScreenState extends State<SignUpScreen> {
     else if(!passwordTextEditingController.text.trim().contains(RegExp(r'[!@#%^&*(),.?":{}|<>]'))){
       cMethods.displaySnackBar("Must use Special Character", context);
     }
+    else
+    {
+      registerUser();
+    }
+  }
+
+  void registerUser() async {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (BuildContext context) => LoadingDialog(messageText: "Registering your account.."),
+    );
+
+    final User? userFirebase = (
+    await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: emailTextEditingController.text.trim(),
+        password: passwordTextEditingController.text.trim(),
+    ).catchError((errorMsg)
+        {
+          cMethods.displaySnackBar(errorMsg.toString(), context);
+        })
+    ).user;
   }
 }

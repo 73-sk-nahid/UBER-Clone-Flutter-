@@ -28,7 +28,7 @@ class LoadingDialog extends StatelessWidget {
                   ),
                    SizedBox(width: 8,),
                   Text(
-                    messageText ,
+                    messageText,
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.white,
