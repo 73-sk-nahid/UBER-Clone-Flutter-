@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:774900522703:android:772195555bba856d3a21ba",
+        "mobilesdk_app_id": "1:774900522703:android:c4d9d9ba794e75fd3a21ba",
         "android_client_info": {
-          "package_name": "com.sknahid.uber_clone_user_app"
+          "package_name": "com.example.uber_clone_user_app"
         }
       },
       "oauth_client": [],

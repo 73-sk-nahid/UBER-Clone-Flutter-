@@ -13,7 +13,7 @@ import 'package:uber_clone_user_app/authentication/login_screen.dart';
 Future main() async 
 {
   WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp();
+  await Firebase.initializeApp();
 
   runApp(const MyApp());
 }
