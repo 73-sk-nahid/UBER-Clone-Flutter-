@@ -2,14 +2,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:uber_clone_user_app/authentication/login_screen.dart';
 
-/* Future<void> main() async
-{
-  WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp();
-
-  runApp(const MyApp());
-} */
-
 Future main() async 
 {
   WidgetsFlutterBinding.ensureInitialized();
