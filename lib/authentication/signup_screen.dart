@@ -228,7 +228,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     Map userDataMap = {
       "name": userNameTextEditingController.text.trim(),
       "email": emailTextEditingController.text.trim(),
-      "phone": phoneNumberTextEditingController.text.trim(),
+      "phone": "0" + phoneNumberTextEditingController.text.trim(),
       "id": userFirebase.uid,
       "blockStatus": "no",
     };
