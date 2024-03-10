@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class LoadingDialog extends StatelessWidget {
   final String messageText;
   const LoadingDialog({super.key, required this.messageText});
-
   @override
   Widget build(BuildContext context) {
     return Dialog(
@@ -18,18 +17,18 @@ class LoadingDialog extends StatelessWidget {
             color: Colors.black87,
             borderRadius: BorderRadius.circular(5),
           ),
-          child: const Padding(
-            padding: EdgeInsets.all(16),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
             child: Row(
               children: [
-                 SizedBox(width: 5,),
-                 CircularProgressIndicator(
+                 const SizedBox(width: 5,),
+                 const CircularProgressIndicator(
                   valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
                   ),
-                   SizedBox(width: 8,),
+                  const SizedBox(width: 8,),
                   Text(
                     messageText,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                       color: Colors.white,
                     ),
