@@ -1,13 +1,14 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:uber_clone_user_app/authentication/login_screen.dart';
+import 'package:flutter_config/flutter_config.dart';
 
 Future main() async 
 {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 
-  //await FlutterConfig.loadEnvVariables();
+  await FlutterConfig.loadEnvVariables();
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
+    String apiKey = FlutterConfig.get('googleAPIKey');
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
