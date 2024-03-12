@@ -3,7 +3,11 @@ import 'package:flutter_config/flutter_config.dart';
 
 String userName = "";
 String googleMapKey = FlutterConfig.get('googleAPIKey');
-//String googleMapKey = "AIzaSyDZDqr8Va2drRaWXkCJyddm6BwfmEXJyRg";
+
+void main() {
+  print("Google Map Key: $googleMapKey");
+  // The rest of your main function or code.
+}
 
 const CameraPosition googlePlexInitialPosition = CameraPosition(
     target: LatLng(23.7168531,90.4941576),
