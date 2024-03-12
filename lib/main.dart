@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    String apiKey = FlutterConfig.get('googleAPIKey');
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
