@@ -183,7 +183,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     }
   }
 
-  /* void registerUser() async {
+  void registerUser() async {
     try {
       showDialog(
         context: context,
@@ -224,9 +224,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
     } catch (error) {
       Navigator.pop(context); // Dismiss the loading dialog in case of an error
       cMethods.displaySnackBar("Error: $error", context);
-    } */
+    }
 
-  void registerUser() async {
+    /*  void registerUser() async {
     showDialog(
       context: context,
       barrierDismissible: false,
@@ -260,5 +260,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
     usersRef.set(userDataMap);
     Navigator.push(context, MaterialPageRoute(builder: (c) => HomePage()));
+  } */
   }
 }
