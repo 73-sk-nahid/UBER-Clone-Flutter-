@@ -43,6 +43,6 @@ class _HomePageState extends State<HomePage> {
 
     LatLng userPosition = LatLng(userCurrentLocation!.latitude, userCurrentLocation!.longitude);
     CameraPosition cameraPosition = CameraPosition(target: userPosition, zoom: 15);
-    controllerGoogleMap!.animateCamera(cameraUpdate.newCameraPosition(cameraPosition));
+    controllerGoogleMap!.animateCamera(CameraUpdate.newCameraPosition(cameraPosition));
   }
 }
