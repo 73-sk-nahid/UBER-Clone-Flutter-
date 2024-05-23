@@ -21,4 +21,8 @@ class CommonMethods
       duration: const Duration(seconds: 1));
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
+
+  newMethod(){
+
+  }
 }
